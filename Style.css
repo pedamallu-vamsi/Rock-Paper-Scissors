@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, #311465, #8B008B);
+
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-box{
+    width: 375px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
