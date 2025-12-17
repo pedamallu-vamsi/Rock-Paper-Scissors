@@ -1,33 +1,41 @@
 function buttonRock(){
     var r=Math.floor(Math.random()*3);
     if(r==0){
-        alert("The computer choose rock, Its a Tie!!");
+        showPopup("The computer choose rock, Its a Tie!!");
     }
     else if(r==1){
-        alert("The computer choose paper, You Lose!!");
+        showPopup("The computer choose paper, You Lose!!");
     }else{
-        alert("The computer chooses scissors, You Win!!");
+        showPopup("The computer chooses scissors, You Win!!");
     }
 }
 function buttonPaper(){
     var r=Math.floor(Math.random()*3);
     if(r==0){
-        alert("The computer choose rock, You Win!!");
+        showPopup("The computer choose rock, You Win!!");
     }
     else if(r==1){
-        alert("The computer choose paper, It's a Tie!!");
+        showPopup("The computer choose paper, It's a Tie!!");
     }else{
-        alert("The computer chooses scissors, You Lose!!");
+        showPopup("The computer chooses scissors, You Lose!!");
     }
 }
 function buttonScissor(){
     var r=Math.floor(Math.random()*3);
     if(r==0){
-        alert("The computer choose rock, You Lose!!");
+        showPopup("The computer choose rock, You Lose!!");
     }
     else if(r==1){
-        alert("The computer choose paper, You Win!!");
+        showPopup("The computer choose paper, You Win!!");
     }else{
-        alert("The computer chooses scissors, It's a Tie!!");
+        showPopup("The computer chooses scissors, It's a Tie!!");
     }
+}
+function showPopup(message) {
+    document.getElementById("resultText").innerText = message;
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
 }
