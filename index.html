@@ -4,13 +4,21 @@
         <script src="Script.js"></script>
         <link rel="stylesheet" href="Style.css">
     </head>
-    <body bgcolor="lightyellow">
+    <body>
+        <h1 class="heading">Rock Paper Scissors</h1>
         <div class="images">
             <div class="images">
-                <div class="img-box"><img src="Rock.png" onclick="buttonRock()"></div>
-                <div class="img-box"><img src="Paper.png" onclick="buttonPaper()"></div>
-                <div class="img-box"><img src="Scissors.png" onclick="buttonScissor()"></div>
+                <div class="img-box"><img src="Rock Removebg.png" onclick="buttonRock()" alt="Rock"></div>
+                <div class="img-box"><img src="Paper Removebg.png" onclick="buttonPaper()" alt="Paper"></div>
+                <div class="img-box"><img src="Scissors Removebg.png" onclick="buttonScissor()" alt="Scissor"></div>
             </div>
         </div>
+        <div id="popup" class="popup">
+    <div class="popup-content">
+        <p id="resultText"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
     </body>
 </html>
